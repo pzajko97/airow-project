@@ -4,22 +4,23 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.zajkop.airow.ConsolidatedData.ActivityOverview;
 import com.zajkop.airow.ConsolidatedData.LapData;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Stream;
 
 @AllArgsConstructor
+@RequiredArgsConstructor
 class DataProcessor {
 
     private static final String HEART_RATE_SAMPLE_TYPE = "2";
     private final File summaryFile;
     private final File lapsFile;
     private final File samplesFile;
+    private String outputPath = "build/generated/output.json";
 
     public void process() throws IOException {
         var summary = DataLoader.loadSummary(summaryFile);
@@ -49,7 +50,7 @@ class DataProcessor {
                 .lapsData(lapsData)
                 .build();
 
-        new ObjectMapper().writer().writeValue(new File("build/generated/output.json"), consolidatedData);
+        new ObjectMapper().writer().writeValue(new File(outputPath), consolidatedData);
     }
 
     private List<DetailedHeartRateSample> getHeartRateSamples(List<Sample> hRSamples) {
