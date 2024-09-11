@@ -1,0 +1,133 @@
+{
+  "activityOverview": {
+    "userId": "1234567890",
+    "type": "INDOOR_CYCLING",
+    "device": "instinct2",
+    "maxHeartRate": 190,
+    "duration": 3667
+  },
+  "lapsData": [
+    {
+      "startTime": 1661158927,
+      "distance": 15,
+      "duration": 600,
+      "detailedHeartRateSamples": [
+        {
+          "index": 0,
+          "heartRate": 120
+        },
+        {
+          "index": 0,
+          "heartRate": 126
+        },
+        {
+          "index": 0,
+          "heartRate": 122
+        },
+        {
+          "index": 0,
+          "heartRate": 140
+        },
+        {
+          "index": 0,
+          "heartRate": 142
+        },
+        {
+          "index": 0,
+          "heartRate": 155
+        },
+        {
+          "index": 0,
+          "heartRate": 145
+        },
+        {
+          "index": 1,
+          "heartRate": 141
+        },
+        {
+          "index": 1,
+          "heartRate": 147
+        },
+        {
+          "index": 1,
+          "heartRate": 155
+        },
+        {
+          "index": 1,
+          "heartRate": 160
+        },
+        {
+          "index": 1,
+          "heartRate": 180
+        },
+        {
+          "index": 1,
+          "heartRate": 152
+        },
+        {
+          "index": 1,
+          "heartRate": 120
+        }
+      ]
+    },
+    {
+      "startTime": 1661158929,
+      "distance": 30,
+      "duration": 900,
+      "detailedHeartRateSamples": [
+        {
+          "index": 2,
+          "heartRate": 143
+        },
+        {
+          "index": 2,
+          "heartRate": 151
+        },
+        {
+          "index": 2,
+          "heartRate": 164
+        },
+        {
+          "index": 2,
+          "heartRate": 173
+        },
+        {
+          "index": 2,
+          "heartRate": 181
+        },
+        {
+          "index": 2,
+          "heartRate": 180
+        },
+        {
+          "index": 3,
+          "heartRate": 182
+        },
+        {
+          "index": 3,
+          "heartRate": 170
+        },
+        {
+          "index": 3,
+          "heartRate": 188
+        },
+        {
+          "index": 3,
+          "heartRate": 181
+        },
+        {
+          "index": 3,
+          "heartRate": 174
+        },
+        {
+          "index": 3,
+          "heartRate": 172
+        },
+        {
+          "index": 3,
+          "heartRate": 158
+        }
+      ]
+    }
+  ]
+}
